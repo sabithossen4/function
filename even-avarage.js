@@ -9,11 +9,11 @@ function evenAvarageNumber(numbers){
   for(number of even){
     sum=sum+number;
   }
-  // const count = even.length;
+  
   const avg=sum/even.length;
-  return avg;
-    // return even;
+  return [avg,even];
+    
 }
 const numbers=[45,82,15,68,79,20];
-const age =evenAvarageNumber(numbers);
-console.log('even avarage',age);
+const [a,b] =evenAvarageNumber(numbers);
+console.log('even avarage',a ,b );

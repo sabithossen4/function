@@ -12,12 +12,9 @@ function oddAvarageNumber(numbers){
      const count = odd.length;
      const avg = sum/count;
      
-     return avg;
-    //  return odd;
+     return [avg,odd];
+    
 }
 const numbers=[45,82,15,68,79,20];
-const age = oddAvarageNumber(numbers);
-console.log('total age ',age);
-
-
-
+const [a,b] = oddAvarageNumber(numbers);
+console.log('total age ',a,b);
